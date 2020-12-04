@@ -50,7 +50,6 @@ class DrumKit {
       if (this.isPlaying) { //this.isPlaying returns value from setInterval, clear interval -2-; null is not equal to value so it is false//
         //Clear the interval
         clearInterval(this.isPlaying);
-        console.log(this.isPlaying);
         this.isPlaying = null; //Setting back to null //
       } else {
         this.isPlaying = setInterval(() => { //set interval retuns value, that can be used to clear interval -1- // 
